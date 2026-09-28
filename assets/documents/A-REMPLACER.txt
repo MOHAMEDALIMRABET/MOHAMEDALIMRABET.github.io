@@ -2,6 +2,9 @@ Dossier réservé aux documents téléchargeables du portfolio (CV, certificats.
 
 - CV.pdf : ajouté (vrai document).
 - certificat-exemple.pdf : encore un exemple, à remplacer par un vrai certificat si souhaité.
-- guide-sap-bo-4.3.pdf : à ajouter (guide utilisateur réel de la mission SAP BO 4.2 → 4.3).
+
+Le guide utilisateur BO 4.3 n'est volontairement pas publié en entier ici (données
+Bouygues Telecom confidentielles) : seules la page de garde et l'introduction sont
+montrées, en images, dans assets/gallery/sap-bo-migration/.
 
 Ce fichier peut être supprimé une fois tous les documents réels ajoutés.
