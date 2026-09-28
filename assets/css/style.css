@@ -103,6 +103,9 @@ body { margin: 0; background: var(--bg); color: var(--ink); line-height: 1.55; }
 .doc-hint { font-size: 12px; color: var(--muted); }
 
 /* Contact */
+.contact-info { display: flex; gap: 20px; flex-wrap: wrap; color: var(--muted); font-size: 14px; margin: -16px 0 24px; }
+.contact-info a { color: var(--muted); text-decoration: none; }
+.contact-info a:hover { color: var(--accent); }
 .contact-row { display: flex; gap: 14px; flex-wrap: wrap; }
 
 /* Footer */
