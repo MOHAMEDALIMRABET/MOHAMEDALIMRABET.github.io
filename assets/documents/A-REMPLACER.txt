@@ -1,0 +1,7 @@
+Dossier réservé aux documents téléchargeables du portfolio (CV, certificats...).
+
+Fichiers attendus par index.html :
+- CV.pdf
+- certificat-exemple.pdf (renommer/adapter selon les documents réels)
+
+Ce fichier peut être supprimé une fois de vrais documents ajoutés.
