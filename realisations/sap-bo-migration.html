@@ -55,7 +55,7 @@
         <div class="gallery-grid">
           <article class="gallery-card">
             <div class="gallery-media">
-              <img src="../assets/gallery/sap-bo-migration/guide-couverture.png" alt="Page de garde du guide utilisateur BO 4.3" loading="lazy">
+              <img class="lightbox-trigger" src="../assets/gallery/sap-bo-migration/guide-couverture.png" alt="Page de garde du guide utilisateur BO 4.3" loading="lazy">
             </div>
             <div class="gallery-body">
               <h3>Page de garde</h3>
@@ -64,7 +64,7 @@
           </article>
           <article class="gallery-card">
             <div class="gallery-media">
-              <img src="../assets/gallery/sap-bo-migration/guide-introduction.png" alt="Page d'introduction du guide utilisateur BO 4.3" loading="lazy">
+              <img class="lightbox-trigger" src="../assets/gallery/sap-bo-migration/guide-introduction.png" alt="Page d'introduction du guide utilisateur BO 4.3" loading="lazy">
             </div>
             <div class="gallery-body">
               <h3>Introduction</h3>
@@ -90,6 +90,11 @@
     </section>
   </main>
 
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" id="lightbox-close" aria-label="Fermer">✕</button>
+    <div class="lightbox-content" id="lightbox-content"></div>
+  </div>
+
   <footer class="site-footer">
     <div class="wrap">
       <span>&copy; <span id="year"></span> Mohamed Ali Mrabet</span>
@@ -98,5 +103,6 @@
   </footer>
 
   <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/lightbox.js"></script>
 </body>
 </html>
