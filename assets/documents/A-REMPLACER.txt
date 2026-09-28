@@ -2,5 +2,6 @@ Dossier réservé aux documents téléchargeables du portfolio (CV, certificats.
 
 - CV.pdf : ajouté (vrai document).
 - certificat-exemple.pdf : encore un exemple, à remplacer par un vrai certificat si souhaité.
+- guide-sap-bo-4.3.pdf : à ajouter (guide utilisateur réel de la mission SAP BO 4.2 → 4.3).
 
 Ce fichier peut être supprimé une fois tous les documents réels ajoutés.
