@@ -1,8 +1,6 @@
 Dossier de la réalisation « Montée de version SAP BO 4.2 → 4.3 (Bouygues Telecom) ».
 
 - guide-couverture.png / guide-introduction.png : ajoutées (aperçu non confidentiel du guide utilisateur).
-- presentation.mp4 : vidéo de présentation à ajouter (format .mp4/H.264 recommandé, rester
-  sous ~50 Mo si possible — voir assets/gallery/techmemia/A-REMPLACER.txt pour le détail
-  des limites GitHub).
+- presentation.mp4 : ajoutée (vidéo réelle, atelier de présentation).
 
-Ce fichier peut être supprimé une fois la vraie vidéo ajoutée.
+Ce fichier peut être supprimé.
