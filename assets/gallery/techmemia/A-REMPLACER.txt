@@ -1,0 +1,14 @@
+Dossier réservé aux fichiers réels de la galerie pour le projet TechMemIA
+(captures d'écran, vidéos, documents PDF/Word, jeux de données JSON/CSV).
+
+Les noms de fichiers doivent correspondre à ceux référencés dans
+assets/data/gallery.json (champ "src").
+
+Vidéos hébergées directement ici (pas de service externe requis) :
+- Formats attendus : .mp4 (H.264) pour une compatibilité navigateur maximale.
+- Limite technique GitHub : 100 Mo par fichier (refusé au-delà), 50 Mo recommandé.
+- Si une vidéo dépasse cette taille, la compresser avant de l'ajouter, ou passer
+  par un champ "provider" (youtube/vimeo) dans gallery.json pour l'intégrer
+  depuis un hébergement externe à la place.
+
+Ce fichier peut être supprimé une fois de vrais fichiers ajoutés.

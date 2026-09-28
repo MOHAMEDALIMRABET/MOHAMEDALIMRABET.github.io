@@ -1,0 +1,56 @@
+[
+  {
+    "id": "techmemia-demo-recherche",
+    "projet": "TechMemIA",
+    "specialite": "IA appliquée",
+    "titre": "Capture — recherche avec sources",
+    "description": "Exemple à remplacer par une vraie capture d'écran de l'interface de recherche.",
+    "type": "image",
+    "src": "assets/gallery/techmemia/exemple-recherche.png"
+  },
+  {
+    "id": "techmemia-video-demo",
+    "projet": "TechMemIA",
+    "specialite": "IA appliquée",
+    "titre": "Vidéo de démonstration",
+    "description": "Exemple à remplacer par un vrai fichier vidéo hébergé dans assets/gallery/techmemia/ (garder les fichiers sous ~50 Mo pour rester compatible avec GitHub).",
+    "type": "video",
+    "src": "assets/gallery/techmemia/exemple-demo.mp4"
+  },
+  {
+    "id": "techmemia-spec-pdf",
+    "projet": "TechMemIA",
+    "specialite": "Gestion de projet",
+    "titre": "Spécifications POC (PDF)",
+    "description": "Exemple à remplacer par le vrai document (export du cadrage fonctionnel).",
+    "type": "pdf",
+    "src": "assets/gallery/techmemia/exemple-specifications.pdf"
+  },
+  {
+    "id": "techmemia-rapport-word",
+    "projet": "TechMemIA",
+    "specialite": "Gestion de projet",
+    "titre": "Compte rendu d'atelier (Word)",
+    "description": "Exemple à remplacer par un vrai document Word.",
+    "type": "word",
+    "src": "assets/gallery/techmemia/exemple-compte-rendu.docx"
+  },
+  {
+    "id": "techmemia-donnees-csv",
+    "projet": "TechMemIA",
+    "specialite": "Business Intelligence",
+    "titre": "Jeu de données d'exemple (CSV)",
+    "description": "Exemple à remplacer par un vrai export de données (anonymisé si nécessaire).",
+    "type": "csv",
+    "src": "assets/gallery/techmemia/exemple-donnees.csv"
+  },
+  {
+    "id": "techmemia-config-json",
+    "projet": "TechMemIA",
+    "specialite": "Développement",
+    "titre": "Exemple de mapping de champs (JSON)",
+    "description": "Exemple à remplacer par une vraie configuration.",
+    "type": "json",
+    "src": "assets/gallery/techmemia/exemple-mapping.json"
+  }
+]

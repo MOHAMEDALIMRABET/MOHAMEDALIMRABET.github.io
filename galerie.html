@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f4">
+  <title>Galerie — Mohamed Ali Mrabet</title>
+  <meta name="description" content="Galerie de preuves de réalisations : images, vidéos, documents.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html#accueil">Mohamed Ali Mrabet</a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav class="primary-nav" id="primary-nav">
+        <a href="index.html#apropos">À propos</a>
+        <a href="index.html#realisations">Réalisations</a>
+        <a href="galerie.html" aria-current="page">Galerie</a>
+        <a href="index.html#competences">Compétences</a>
+        <a href="index.html#documents">Documents</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="wrap">
+        <h2>Galerie de réalisations</h2>
+        <p class="section-intro">
+          Preuves concrètes par projet : captures, vidéos, documents. Éléments actuellement affichés
+          à titre d'exemple — à remplacer par de vrais fichiers (voir <code>assets/data/gallery.json</code>).
+        </p>
+        <div class="gallery-filters" id="gallery-filters" role="tablist" aria-label="Filtrer par projet"></div>
+        <div class="gallery-grid" id="gallery-grid"></div>
+        <p class="empty" id="gallery-empty" hidden>Aucun élément pour ce filtre.</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" id="lightbox-close" aria-label="Fermer">✕</button>
+    <div class="lightbox-content" id="lightbox-content"></div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; <span id="year"></span> Mohamed Ali Mrabet</span>
+      <span>Site statique, sans framework, hébergé sur GitHub Pages.</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/gallery.js"></script>
+</body>
+</html>
