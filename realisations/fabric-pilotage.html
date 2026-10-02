@@ -43,23 +43,52 @@
           </p>
           <p>Actions réalisées :</p>
           <ul style="color:var(--muted); font-size:14px; padding-left:1.2em; margin:0 0 14px;">
-            <li>Suivi et analyse de la consommation des capacités via Capacity Metrics</li>
-            <li>Détection des pics de consommation et identification des items surconsommateurs</li>
+            <li>Surveillance du Fabric Capacity Metrics pour analyser la consommation et identifier les items à l'origine des pics (captures ci-dessous)</li>
             <li>Mise en œuvre d'actions d'optimisation</li>
-            <li>Formation et sensibilisation des équipes aux bonnes pratiques d'utilisation de Microsoft Fabric</li>
+            <li>Test des modes Import, DirectQuery et Direct Lake (avantages et inconvénients de chacun)</li>
+            <li>Ajout de tables dans le Lakehouse</li>
+            <li>Création du modèle sémantique</li>
+            <li>Formation des nouveaux utilisateurs aux bonnes pratiques, pour éviter de saturer la capacité Fabric</li>
           </ul>
         </div>
 
         <h2 style="margin-top:40px;">Captures</h2>
-        <p class="section-intro">Illustrations à venir pour cette mission.</p>
+        <p class="section-intro">Suivi du Fabric Capacity Metrics : utilisation des capacités, throttling, événements système et synthèse par point dans le temps.</p>
         <div class="gallery-grid">
-          <article class="gallery-card card-placeholder">
+          <article class="gallery-card">
             <div class="gallery-media">
-              <span style="color:var(--muted); font-size:13px;">Exemple à remplacer</span>
+              <img class="lightbox-trigger" src="../assets/gallery/fabric-pilotage/capacity-metrics-utilization.png" alt="Fabric Capacity Metrics : utilisation des capacités (CU %) dans le temps" loading="lazy">
             </div>
             <div class="gallery-body">
-              <h3>Capture à ajouter</h3>
-              <p>Déposer l'image dans assets/gallery/fabric-pilotage/ et l'ajouter ici.</p>
+              <h3>Utilisation des capacités</h3>
+              <p>Suivi du % CU par rapport à la limite, pour repérer les dépassements.</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <div class="gallery-media">
+              <img class="lightbox-trigger" src="../assets/gallery/fabric-pilotage/capacity-metrics-throttling.png" alt="Fabric Capacity Metrics : délai d'interactivité (throttling)" loading="lazy">
+            </div>
+            <div class="gallery-body">
+              <h3>Throttling</h3>
+              <p>Détection des délais/rejets d'interactivité liés à la saturation de la capacité.</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <div class="gallery-media">
+              <img class="lightbox-trigger" src="../assets/gallery/fabric-pilotage/capacity-metrics-system-events.png" alt="Fabric Capacity Metrics : événements système (changements d'état de capacité)" loading="lazy">
+            </div>
+            <div class="gallery-body">
+              <h3>Événements système</h3>
+              <p>Historique des transitions d'état de la capacité (Active / Overloaded).</p>
+            </div>
+          </article>
+          <article class="gallery-card">
+            <div class="gallery-media">
+              <img class="lightbox-trigger" src="../assets/gallery/fabric-pilotage/capacity-metrics-timepoint-summary.png" alt="Fabric Capacity Metrics : synthèse détaillée à un instant donné (Timepoint Summary)" loading="lazy">
+            </div>
+            <div class="gallery-body">
+              <h3>Timepoint Summary</h3>
+              <p>Analyse détaillée par workspace, item et opération au moment d'un pic, pour identifier les responsables.</p>
             </div>
           </article>
         </div>
