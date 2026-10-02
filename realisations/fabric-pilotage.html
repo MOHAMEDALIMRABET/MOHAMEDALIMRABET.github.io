@@ -52,6 +52,35 @@
           </ul>
         </div>
 
+        <h2 style="margin-top:40px;">Bonnes pratiques</h2>
+        <p class="section-intro">Recommandations transmises aux équipes pour maîtriser la consommation de capacité Fabric.</p>
+
+        <div class="about-text" style="max-width:70ch;">
+          <h3>Background</h3>
+          <ul style="color:var(--muted); font-size:14px; padding-left:1.2em; margin:0 0 14px;">
+            <li>
+              Pour la copie de données, utiliser les Data Pipelines Fabric (activité Copy Data,
+              optimisée au niveau du stockage, copie bloc par bloc) plutôt qu'un Dataflow Gen2, qui
+              ouvre un moteur de calcul consommant énormément de CU.
+            </li>
+            <li>Un Dataflow Gen2 se planifie à la demi-heure, un pipeline se planifie à la minute → réduire le parallélisme permet de baisser la consommation.</li>
+            <li>Pour la transformation de données, un Notebook (moteur Apache Spark, conçu pour le Big Data) est plus rapide qu'un Power Query.</li>
+            <li>L'export de vues du Data Warehouse vers Excel crée des pics de consommation. Si Excel est obligatoire, utiliser la fonction « Analyser dans Excel » connectée au modèle sémantique, moins gourmande.</li>
+            <li>Éviter les planifications en environnement de test ou de développement si le dataset est volumineux.</li>
+          </ul>
+
+          <h3>Interactif</h3>
+          <ul style="color:var(--muted); font-size:14px; padding-left:1.2em; margin:0 0 14px;">
+            <li>Limiter le nombre de visuels par page</li>
+            <li>Avoir une modélisation en étoile</li>
+            <li>Limiter le nombre de filtres et utiliser « Appliquer les filtres »</li>
+            <li>Supprimer les colonnes inutilisées</li>
+            <li>Exécuter des requêtes optimisées, de moins de 10 minutes (limiter le volume de données)</li>
+            <li>Éviter les graphiques en nuage de points</li>
+            <li>Utiliser l'analyseur de performances pour vérifier que l'affichage des visuels dure moins de 3 secondes</li>
+          </ul>
+        </div>
+
         <h2 style="margin-top:40px;">Captures</h2>
         <p class="section-intro">Suivi du Fabric Capacity Metrics : utilisation des capacités, throttling, événements système et synthèse par point dans le temps.</p>
         <div class="gallery-grid">
