@@ -105,8 +105,35 @@
         <p class="section-intro">Une sélection de projets, avec leur objectif et leur état d'avancement réel.</p>
 
         <h3 class="realisation-group-title">BI / Big Data</h3>
-        <div class="card-grid">
-          <article class="card">
+        <div class="tile-grid">
+          <a class="tile" href="#bi-fabric">
+            <span class="tile-badge" style="background:#0f6cbd;">MF</span>
+            <span class="tile-label">Microsoft Fabric</span>
+          </a>
+          <a class="tile" href="#bi-sapbo">
+            <span class="tile-badge" style="background:#1b3a63;">BO</span>
+            <span class="tile-label">SAP BO</span>
+          </a>
+          <a class="tile" href="#bi-powerbi">
+            <span class="tile-badge" style="background:#f2c811; color:#2b2b2b;">BI</span>
+            <span class="tile-label">Power BI</span>
+          </a>
+          <span class="tile tile-placeholder" aria-disabled="true">
+            <span class="tile-badge" style="background:#9aa3ad;">SQL</span>
+            <span class="tile-label">SQL</span>
+          </span>
+          <a class="tile" href="#bi-celonis">
+            <span class="tile-badge" style="background:#2a4dd0;">GP</span>
+            <span class="tile-label">Gestion de projet décisionnel</span>
+          </a>
+          <a class="tile" href="#bi-python">
+            <span class="tile-badge" style="background:#306998;">PY</span>
+            <span class="tile-label">Python</span>
+          </a>
+        </div>
+
+        <div class="card-grid" style="margin-top:24px;">
+          <article class="card" id="bi-fabric">
             <span class="tag tag-progress">Mission</span>
             <h3>Microsoft Fabric - Pilotage et optimisation</h3>
             <p>
@@ -123,21 +150,7 @@
             <a class="card-link" href="realisations/fabric-pilotage.html">Voir le détail →</a>
           </article>
 
-          <article class="card">
-            <span class="tag tag-progress">Mission</span>
-            <h3>Project Manager — Celonis</h3>
-            <p>
-              Identification des objets et événements avec les équipes métier, mise en place des
-              tables objets et événements dans un Lakehouse Fabric, puis modélisation OCPM.
-            </p>
-            <ul class="tech-list">
-              <li>Celonis</li>
-              <li>Lakehouse Fabric</li>
-              <li>OCPM</li>
-            </ul>
-          </article>
-
-          <article class="card">
+          <article class="card" id="bi-sapbo">
             <span class="tag tag-progress">Mission</span>
             <h3>Montée de version SAP BO 4.2 → 4.3 — Bouygues Telecom</h3>
             <p>
@@ -155,7 +168,7 @@
             <a class="card-link" href="realisations/sap-bo-migration.html">Voir le guide et la vidéo →</a>
           </article>
 
-          <article class="card">
+          <article class="card" id="bi-powerbi">
             <span class="tag tag-progress">Mission</span>
             <h3>Dashboards Power BI — Business &amp; Decision (client Total Energie)</h3>
             <p>
@@ -170,7 +183,7 @@
             </ul>
           </article>
 
-          <article class="card">
+          <article class="card" id="bi-python">
             <span class="tag tag-progress">Mission</span>
             <h3>Suivi de données temps réel — Thales</h3>
             <p>
@@ -181,6 +194,20 @@
               <li>ELK Stack</li>
               <li>Python</li>
               <li>Kibana</li>
+            </ul>
+          </article>
+
+          <article class="card" id="bi-celonis">
+            <span class="tag tag-progress">Mission</span>
+            <h3>Project Manager — Celonis</h3>
+            <p>
+              Identification des objets et événements avec les équipes métier, mise en place des
+              tables objets et événements dans un Lakehouse Fabric, puis modélisation OCPM.
+            </p>
+            <ul class="tech-list">
+              <li>Celonis</li>
+              <li>Lakehouse Fabric</li>
+              <li>OCPM</li>
             </ul>
           </article>
         </div>
