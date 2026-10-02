@@ -1,0 +1,11 @@
+Dossier réservé aux images et à la vidéo de la mission
+« Pilotage et optimisation Microsoft Fabric (Bouygues Telecom) ».
+
+Fichiers attendus (noms libres pour les images, à référencer dans
+realisations/fabric-pilotage.html) :
+- images : captures d'écran (Capacity Metrics, optimisations, etc.)
+- presentation.mp4 : vidéo de présentation (format .mp4/H.264 recommandé,
+  rester sous ~50 Mo si possible — voir assets/gallery/techmemia/A-REMPLACER.txt
+  pour le détail des limites GitHub).
+
+Ce fichier peut être supprimé une fois les vrais fichiers ajoutés.
