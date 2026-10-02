@@ -95,7 +95,10 @@ body { margin: 0; background: var(--bg); color: var(--ink); line-height: 1.55; }
   color: #fff; font-weight: 700; font-size: 12px; text-align: center; padding: 4px;
 }
 .tile-banner-logo { background: var(--bg); }
-.tile-banner-logo img { max-width: 72%; max-height: 72%; object-fit: contain; }
+.tile-banner-logo img {
+  width: 56px; height: 56px; object-fit: contain; background: #fff; border: 1.5px solid #000;
+  border-radius: 6px; padding: 6px;
+}
 .tile-button {
   display: block; text-align: center; border: 1px solid var(--line); border-radius: 5px; padding: 6px 6px;
   font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--muted);
