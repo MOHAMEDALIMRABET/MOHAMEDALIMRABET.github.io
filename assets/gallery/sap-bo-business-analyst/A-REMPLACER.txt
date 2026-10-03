@@ -1,0 +1,11 @@
+Dossier réservé aux images et à la vidéo de la mission
+« SAP BO - Business Analyst, évolutions et gestion des incidents (Bouygues Telecom) ».
+
+Fichiers attendus (noms libres pour les images, à référencer dans
+realisations/sap-bo-business-analyst.html) :
+- images : captures d'écran
+- presentation.mp4 : vidéo de présentation (format .mp4/H.264 recommandé,
+  rester sous ~50 Mo si possible — voir assets/gallery/techmemia/A-REMPLACER.txt
+  pour le détail des limites GitHub).
+
+Ce fichier peut être supprimé une fois les vrais fichiers ajoutés.
