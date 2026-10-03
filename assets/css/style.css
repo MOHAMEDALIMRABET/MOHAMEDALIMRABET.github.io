@@ -57,6 +57,11 @@ body { margin: 0; background: var(--bg); color: var(--ink); line-height: 1.55; }
 .section.alt { background: #f0f1ec; }
 .section h2 { font: 600 28px Georgia, "Times New Roman", serif; margin: 0 0 8px; }
 .section-intro { color: var(--muted); margin: 0 0 32px; font-size: 14px; }
+
+/* Rapproche accueil/À propos/Poste actuel entre elles */
+#accueil { padding-bottom: 32px; }
+#apropos { padding-top: 32px; padding-bottom: 32px; }
+#poste-actuel { padding-top: 32px; }
 .realisation-group-title {
   font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em;
   color: var(--accent); margin: 36px 0 16px;
