@@ -2,6 +2,8 @@
 
 Site personnel statique (HTML/CSS/JS, sans framework ni dépendance) présentant une sélection de réalisations, de compétences et de documents.
 
+**Démonstration en ligne :** [https://mohamedalimrabet.github.io/](https://mohamedalimrabet.github.io/)
+
 ## Aperçu local
 
 Aucune installation nécessaire. Ouvrir directement `index.html` dans un navigateur, ou lancer un petit serveur local (recommandé pour que les liens relatifs se comportent comme en production) :
