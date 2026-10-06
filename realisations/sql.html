@@ -37,13 +37,34 @@
         </h1>
 
         <div class="card-grid" style="margin-top:24px;">
-          <article class="card card-placeholder">
-            <span class="tag tag-todo">Exemple à compléter</span>
-            <h3>Projet SQL</h3>
+          <article class="card">
+            <span class="tag tag-progress">Mission</span>
+            <h3>Vérification quotidienne des traitements SQL <small style="font-size:.65em; font-weight:400; color:var(--muted);">— Bouygues Telecom</small></h3>
             <p>
-              Emplacement réservé pour décrire un projet SQL réalisé (objectif, requêtes/optimisations
-              notables, volumétrie, résultat).
+              Au quotidien, vérification que les traitements SQL des projets existants se sont
+              déroulés correctement, via l'analyse des logs applicatifs stockés en base (tables de
+              journalisation des traitements et de leurs synthèses).
             </p>
+            <p style="font-weight:700; margin:0 0 6px;">Exemples de requêtes de contrôle</p>
+            <pre class="code-block"><code>select * from DT_JNLDET t where trunc(jndt_datcre) &gt; trunc(sysdate)-1 order by 1 desc;
+
+select * from DT_JNLSYN t where trunc(jnst_datdeb) &gt; trunc(sysdate)-1</code></pre>
+            <div class="gallery-grid">
+              <article class="gallery-card">
+                <div class="gallery-media">
+                  <img src="../assets/gallery/sql/log-tables.png" alt="Extrait des tables de journalisation des traitements SQL" loading="lazy">
+                </div>
+                <div class="gallery-body">
+                  <h3>Tables de logs</h3>
+                  <p>Résultat d'une requête de contrôle sur les tables de journalisation des traitements.</p>
+                </div>
+              </article>
+            </div>
+            <ul class="tech-list">
+              <li>SQL</li>
+              <li>Oracle</li>
+              <li>Analyse de logs</li>
+            </ul>
           </article>
         </div>
       </div>

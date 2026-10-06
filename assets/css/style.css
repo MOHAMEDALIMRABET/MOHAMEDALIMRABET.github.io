@@ -86,6 +86,10 @@ body { margin: 0; background: var(--bg); color: var(--ink); line-height: 1.55; }
 }
 .card h3 { margin: 10px 0 10px; font-size: 18px; }
 .card p { color: var(--muted); font-size: 14px; margin: 0 0 14px; }
+.code-block {
+  background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px;
+  font: 13px/1.6 "Cascadia Code", Consolas, monospace; color: var(--ink); overflow-x: auto; margin: 0 0 14px;
+}
 .card-details { margin: 0 0 14px; }
 .card-details summary {
   display: block; color: var(--accent); font-size: 14px; font-weight: 700; cursor: pointer; list-style: none;
