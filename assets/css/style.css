@@ -100,7 +100,7 @@ body { margin: 0; background: var(--bg); color: var(--ink); line-height: 1.55; }
 .card-details p { margin-top: 10px; }
 .query-details { margin: 0 0 14px; }
 .query-details summary {
-  display: block; font-weight: 700; font-size: 13px; color: var(--ink); cursor: pointer; list-style: none;
+  display: block; font-weight: 700; font-size: 12px; color: var(--ink); cursor: pointer; list-style: none;
 }
 .query-details summary::-webkit-details-marker { display: none; }
 .query-details summary::after { content: " \25be"; color: var(--accent); }
