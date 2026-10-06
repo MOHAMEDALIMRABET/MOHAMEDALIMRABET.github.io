@@ -98,6 +98,14 @@ body { margin: 0; background: var(--bg); color: var(--ink); line-height: 1.55; }
 .card-details summary::before { content: "Voir le détail du poste ▾"; }
 .card-details[open] summary::before { content: "Masquer le détail du poste ▴"; }
 .card-details p { margin-top: 10px; }
+.query-details { margin: 0 0 14px; }
+.query-details summary {
+  display: block; font-weight: 700; font-size: 13px; color: var(--ink); cursor: pointer; list-style: none;
+}
+.query-details summary::-webkit-details-marker { display: none; }
+.query-details summary::after { content: " \25be"; color: var(--accent); }
+.query-details[open] summary::after { content: " \25b4"; }
+.query-details .code-block { margin: 10px 0 0; }
 .card-placeholder { border-style: dashed; }
 .card-clickable { display: block; text-decoration: none; color: inherit; transition: border-color .15s ease, transform .15s ease; }
 .card-clickable:hover { border-color: var(--accent); transform: translateY(-2px); }
