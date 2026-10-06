@@ -81,7 +81,8 @@ body { margin: 0; background: var(--bg); color: var(--ink); line-height: 1.55; }
 
 /* Cards / réalisations */
 .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
-.sql-layout { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(280px, .85fr); gap: 20px; align-items: start; margin-top: 24px; }
+.sql-wrap { max-width: 1400px; }
+.sql-layout { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 20px; align-items: start; margin-top: 24px; }
 .sql-reference { background: #f0f1ec; border: 1px solid var(--line); border-radius: 12px; padding: 22px; }
 .sql-reference h2 { font: 600 28px Georgia, "Times New Roman", serif; margin: 0 0 8px; }
 .sql-reference .section-intro { margin: 0 0 20px; }
