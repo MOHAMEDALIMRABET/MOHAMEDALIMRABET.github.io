@@ -39,7 +39,7 @@
         <div class="card-grid" style="margin-top:24px;">
           <article class="card">
             <span class="tag tag-progress">Mission</span>
-            <h3>Vérification quotidienne des traitements SQL <small style="font-size:.65em; font-weight:400; color:var(--muted);">— Chef de projet décisionnel, Bouygues Telecom</small></h3>
+            <h3>Vérification quotidienne des traitements SQL - Chef de projet décisionnel <small style="font-size:.65em; font-weight:400; color:var(--muted);">— Bouygues Telecom</small></h3>
             <p>
               Au quotidien, vérification que les traitements SQL des projets existants se sont
               déroulés correctement, via l'analyse des logs applicatifs stockés en base (tables de
@@ -49,12 +49,6 @@
             <pre class="code-block"><code>select * from DT_JNLDET t where trunc(jndt_datcre) &gt; trunc(sysdate)-1 order by 1 desc;
 
 select * from DT_JNLSYN t where trunc(jnst_datdeb) &gt; trunc(sysdate)-1</code></pre>
-            <div class="gallery-grid" style="grid-template-columns: repeat(auto-fit, minmax(160px, 220px)); margin: 0 0 14px;">
-              <figure style="margin:0; background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden;">
-                <img src="../assets/gallery/sql/log-tables.png" alt="Extrait des tables de journalisation des traitements SQL" loading="lazy" style="display:block; width:100%; height:auto; cursor:default;">
-                <figcaption style="padding: 10px 12px; font-size: 12px; color: var(--muted);">Résultat d'une requête de contrôle sur les tables de journalisation des traitements.</figcaption>
-              </figure>
-            </div>
             <ul class="tech-list">
               <li>SQL</li>
               <li>Oracle</li>
