@@ -81,6 +81,12 @@ body { margin: 0; background: var(--bg); color: var(--ink); line-height: 1.55; }
 
 /* Cards / réalisations */
 .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+.sql-layout { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(280px, .85fr); gap: 20px; align-items: start; margin-top: 24px; }
+.sql-reference { background: #f0f1ec; border: 1px solid var(--line); border-radius: 12px; padding: 22px; }
+.sql-reference h2 { font: 600 28px Georgia, "Times New Roman", serif; margin: 0 0 8px; }
+.sql-reference .section-intro { margin: 0 0 20px; }
+.sql-reference figure { margin: 0; background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.sql-reference img { display: block; width: 100%; height: auto; }
 .card {
   background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 22px;
 }
@@ -204,6 +210,7 @@ body { margin: 0; background: var(--bg); color: var(--ink); line-height: 1.55; }
 
 /* Responsive */
 @media (max-width: 760px) {
+  .sql-layout { grid-template-columns: 1fr; }
   .primary-nav {
     position: absolute; top: 64px; left: 0; right: 0; background: var(--bg);
     flex-direction: column; padding: 16px 24px; border-bottom: 1px solid var(--line);
