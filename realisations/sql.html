@@ -40,7 +40,7 @@
           <article class="card">
             <span class="tag tag-progress">Mission</span>
             <h3>Chef de projet décisionnel <small style="font-size:.65em; font-weight:400; color:var(--muted);">— Bouygues Telecom</small></h3>
-            <h4 style="margin:0 0 10px; font-size:15px; font-weight:700; color:var(--ink);">Vérification quotidienne des traitements SQL</h4>
+            <h4 style="margin:0 0 10px; font-size:13px; font-weight:700; color:var(--ink);">• Vérification quotidienne des traitements SQL</h4>
             <p>
               Au quotidien, vérification que les traitements SQL des projets existants se sont
               déroulés correctement, via l'analyse des logs applicatifs stockés en base (tables de
@@ -50,6 +50,22 @@
             <pre class="code-block"><code>select * from DT_JNLDET t where trunc(jndt_datcre) &gt; trunc(sysdate)-1 order by 1 desc;
 
 select * from DT_JNLSYN t where trunc(jnst_datdeb) &gt; trunc(sysdate)-1</code></pre>
+
+            <h4 style="margin:24px 0 10px; font-size:13px; font-weight:700; color:var(--ink);">• Analyse de l'existant lors des évolutions</h4>
+            <p>
+              Avant toute évolution, analyse de la modélisation déjà en place pour identifier les
+              bonnes jointures à utiliser, puis rapprochement avec l'existant pour détecter les
+              enregistrements orphelins et repérer d'éventuelles anomalies.
+            </p>
+            <p style="font-weight:700; margin:0 0 6px;">Exemple de requête d'exploration des jointures possibles</p>
+            <pre class="code-block"><code>SELECT owner, table_name, column_name,
+       'SELECT DISTINCT ' || column_name || ' FROM ' || owner || '.' || table_name
+       || ' ORDER BY 1;' AS requete
+FROM all_tab_columns
+WHERE UPPER(column_name) LIKE '%ID%SAP%'
+  AND table_name NOT LIKE 'TMP%'
+ORDER BY owner, table_name;</code></pre>
+
             <ul class="tech-list">
               <li>SQL</li>
               <li>Oracle</li>
