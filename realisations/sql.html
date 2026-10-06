@@ -53,7 +53,7 @@ select * from DT_JNLSYN t where trunc(jnst_datdeb) &gt; trunc(sysdate)-1</code><
             <pre class="code-block"><code>SELECT TRUNC(dat_heur_relv_debut_local) AS tstamp,
        COUNT(DISTINCT idnt_pdl) AS nb_echantillons,
        AVG(puissance_w) AS puissance_w
-FROM   admunt.nrj_qowisio_pdl_conso
+FROM   -----------_pdl_conso
 WHERE  trunc(dat_heur_relv_debut_local) > trunc(sysdate - 68)
 GROUP  BY TRUNC(dat_heur_relv_debut_local)
 ORDER  BY TRUNC(dat_heur_relv_debut_local) DESC;</code></pre>
