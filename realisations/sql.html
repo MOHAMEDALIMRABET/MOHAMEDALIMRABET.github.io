@@ -46,7 +46,7 @@
               déroulés correctement, via l'analyse des logs applicatifs stockés en base (tables de
               journalisation des traitements et de leurs synthèses).
             </p>
-            <p style="font-weight:700; margin:0 0 6px;">Exemples de requêtes de contrôle</p>
+            <p style="font-weight:700; font-size:13px; margin:0 0 6px;">Exemples de requêtes de contrôle</p>
             <pre class="code-block"><code>select * from DT_JNLDET t where trunc(jndt_datcre) &gt; trunc(sysdate)-1 order by 1 desc;
 
 select * from DT_JNLSYN t where trunc(jnst_datdeb) &gt; trunc(sysdate)-1</code></pre>
@@ -57,7 +57,7 @@ select * from DT_JNLSYN t where trunc(jnst_datdeb) &gt; trunc(sysdate)-1</code><
               bonnes jointures à utiliser, puis rapprochement avec l'existant pour détecter les
               enregistrements orphelins et repérer d'éventuelles anomalies.
             </p>
-            <p style="font-weight:700; margin:0 0 6px;">Exemple de requête d'exploration des jointures possibles</p>
+            <p style="font-weight:700; font-size:13px; margin:0 0 6px;">Exemple de requête d'analyse</p>
             <pre class="code-block"><code>SELECT owner, table_name, column_name,
        'SELECT DISTINCT ' || column_name || ' FROM ' || owner || '.' || table_name
        || ' ORDER BY 1;' AS requete
