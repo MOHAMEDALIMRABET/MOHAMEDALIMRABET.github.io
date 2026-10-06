@@ -50,6 +50,13 @@
             <pre class="code-block"><code>select * from DT_JNLDET t where trunc(jndt_datcre) &gt; trunc(sysdate)-1 order by 1 desc;
 
 select * from DT_JNLSYN t where trunc(jnst_datdeb) &gt; trunc(sysdate)-1</code></pre>
+            <pre class="code-block"><code>SELECT TRUNC(dat_heur_relv_debut_local) AS tstamp,
+       COUNT(DISTINCT idnt_pdl) AS nb_echantillons,
+       AVG(puissance_w) AS puissance_w
+FROM   admunt.nrj_qowisio_pdl_conso
+WHERE  trunc(dat_heur_relv_debut_local) > trunc(sysdate - 68)
+GROUP  BY TRUNC(dat_heur_relv_debut_local)
+ORDER  BY TRUNC(dat_heur_relv_debut_local) DESC;</code></pre>
 
             <h4 style="margin:24px 0 10px; font-size:13px; font-weight:700; color:var(--ink);">• Analyse de l'existant lors des évolutions</h4>
             <p>
@@ -65,6 +72,23 @@ FROM all_tab_columns
 WHERE UPPER(column_name) LIKE '%ID%SAP%'
   AND table_name NOT LIKE 'TMP%'
 ORDER BY owner, table_name;</code></pre>
+
+            <h4 style="margin:24px 0 10px; font-size:13px; font-weight:700; color:var(--ink);">• Vérification après un changement de règle de gestion</h4>
+            <p>
+              Suite à une évolution de règle de gestion, vérification de l'adéquation entre le
+              résultat obtenu et la demande, en comparant les volumes avant/après la modification
+              pour détecter tout écart inattendu.
+            </p>
+            <p style="font-weight:700; font-size:13px; margin:0 0 6px;">Exemple de requête de vérification</p>
+            <pre class="code-block"><code>SELECT zones,
+       COUNT(CASE WHEN trunc(dat_mdf) = trunc(sysdate)     THEN 1 END) AS nb_zones_j,
+       COUNT(CASE WHEN trunc(dat_mdf) = trunc(sysdate - 1) THEN 1 END) AS nb_zones_j_1,
+       COUNT(CASE WHEN trunc(dat_mdf) = trunc(sysdate)     THEN 1 END)
+     - COUNT(CASE WHEN trunc(dat_mdf) = trunc(sysdate - 1) THEN 1 END) AS ecart
+FROM   nrj_sitgeo
+WHERE  trunc(dat_mdf) IN (trunc(sysdate), trunc(sysdate - 1))
+GROUP  BY zones
+ORDER  BY zones;</code></pre>
 
             <ul class="tech-list">
               <li>SQL</li>
