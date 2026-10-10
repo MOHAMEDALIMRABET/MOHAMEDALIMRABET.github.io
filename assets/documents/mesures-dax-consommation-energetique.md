@@ -1,6 +1,6 @@
 ### Les mesures clés, avec le code DAX
 
-Le modèle compte **78 mesures**. Voici les plus importantes. Les tables sont renommées `Fixe` et `Radio` pour la lisibilité ; la logique et les formules sont celles du rapport.
+Le modèle compte plusieurs mesures. Voici les plus importantes. Les tables sont renommées `Fixe` et `Radio` pour la lisibilité ; la logique et les formules sont celles du rapport.
 
 ### 1. Sélection dynamique de l'indicateur
 
