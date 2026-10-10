@@ -115,6 +115,86 @@
         </ul>
       </div>
     </section>
+    <section class="section" id="pages-du-rapport">
+      <div class="wrap">
+        <h2>Les 5 pages du rapport</h2>
+        <p class="section-intro">
+          Le rapport compte <strong>5 pages</strong>. Toutes partagent le même principe :
+          l'utilisateur choisit un <strong>indicateur</strong>, un <strong>niveau de regroupement</strong>
+          et une <strong>agrégation temporelle</strong> avec des filtres, et le graphique s'adapte.
+        </p>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Page 1 – Inventaire accès fixe</h3>
+            <p><em>Quel parc d'équipements ?</em></p>
+            <p><strong>Visuel :</strong> histogramme du <strong>nombre d'équipements par mois</strong>, découpé par catégorie. Une infobulle indique la catégorie.</p>
+            <p><strong>Filtres :</strong> groupe d'équipements, domaine, zone FTTH et agrégation temporelle.</p>
+            <p><strong>Utilité :</strong> suivre l'évolution du parc du réseau d'accès fixe, qui explique en partie l'évolution de la consommation.</p>
+            <div class="card card-placeholder">
+              <p>Capture d'écran anonymisée à insérer ici.</p>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Page 2 – Zoom consommation accès fixe</h3>
+            <p><em>Combien consomme le réseau fixe ?</em></p>
+            <p><strong>Visuel :</strong> histogramme mensuel de la <strong>mesure choisie</strong>, avec une couleur par domaine.</p>
+            <p><strong>Filtres :</strong> zone FTTH, groupe d'équipements, domaine, <strong>mesure</strong>, <strong>dimension de visualisation</strong> et agrégation temporelle.</p>
+            <p><strong>Utilité :</strong> un seul graphique répond à plusieurs questions : l'utilisateur change l'indicateur ou l'axe d'analyse sans changer de page.</p>
+            <div class="card card-placeholder">
+              <p>Capture d'écran anonymisée à insérer ici.</p>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Page 3 – Zoom consommation accès mobile</h3>
+            <p><em>Combien consomme le réseau radio, et les données sont-elles fiables ?</em></p>
+            <p><strong>Visuels :</strong> histogramme mensuel de la mesure choisie, par zone, et <strong>deux graphiques de complétude des données Linky</strong> : un par catégorie, l'autre combinant le nombre total de sites (colonnes) et le taux de complétude (courbe).</p>
+            <p><strong>Filtres :</strong> nombre de bandes, présence des bandes de fréquence sur le site (700, 800, 1800, 2100, 2600), mesure, dimension de visualisation et agrégation temporelle.</p>
+            <p><strong>Utilité :</strong> analyser la consommation selon la configuration technique du site et mesurer la <strong>qualité de la donnée</strong> remontée par les compteurs Linky.</p>
+            <div class="card card-placeholder">
+              <p>Capture d'écran anonymisée à insérer ici.</p>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Page 4 – Consommation du réseau par domaine</h3>
+            <p><em>Quelle part pour chaque domaine ?</em></p>
+            <p><strong>Visuels :</strong> un <strong>camembert</strong> et un <strong>anneau</strong> de répartition. Les infobulles affichent les cumuls fixe, radio et total.</p>
+            <p><strong>Filtres :</strong> mesure et année.</p>
+            <p><strong>Utilité :</strong> disposer d'une vue consolidée pour identifier où se concentre la consommation, entre fixe et radio et entre domaines.</p>
+            <div class="card card-placeholder">
+              <p>Capture d'écran anonymisée à insérer ici.</p>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Page 5 – Évolution temporelle par domaine</h3>
+            <p><em>Comment évolue la consommation ?</em></p>
+            <p><strong>Visuel :</strong> histogramme par mois, avec une couleur par type d'accès (fixe ou radio) et une hiérarchie de dates (année, mois).</p>
+            <p><strong>Filtres :</strong> mesure et agrégation temporelle.</p>
+            <p><strong>Utilité :</strong> repérer les tendances, les pics et l'effet de la croissance du réseau sur la consommation.</p>
+            <div class="card card-placeholder">
+              <p>Capture d'écran anonymisée à insérer ici.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="wrap">
+        <h2>Points techniques</h2>
+        <div class="about-text" style="max-width:70ch;">
+          <p>
+            Le modèle combine les données fixe et radio dans une table commune. La
+            <strong>sélection dynamique des mesures</strong> (une mesure unique dont le contenu
+            change selon le choix de l'utilisateur) et l'<strong>agrégation temporelle au choix</strong>
+            évitent de multiplier les pages et les visuels.
+          </p>
+          <p>
+            <strong>À propos des données :</strong> les captures seront anonymisées avant leur
+            publication ; aucune valeur présentée ne reflétera les chiffres réels de l'entreprise.
+          </p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
