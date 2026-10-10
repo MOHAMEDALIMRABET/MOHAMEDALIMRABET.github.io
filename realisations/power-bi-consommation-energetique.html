@@ -183,6 +183,71 @@
 
     <section class="section alt">
       <div class="wrap">
+        <h2>Les mesures DAX clés</h2>
+        <p class="section-intro">
+          J'ai conçu une couche de mesures qui rend le rapport flexible et fiable :
+          <strong>12 mesures, en 4 familles</strong>.
+        </p>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Sélection dynamique de l'indicateur</h3>
+            <p>
+              L'utilisateur choisit l'indicateur à afficher, et une même mesure pilote les
+              graphiques. Elle sert sur trois pages : accès fixe, accès mobile et évolution temporelle.
+            </p>
+            <ul class="tech-list">
+              <li><code>Mesure</code></li>
+              <li><code>Mesure_</code></li>
+              <li><code>Mesure_Sélectionnée</code></li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Cumuls fixe, radio et total</h3>
+            <p>
+              Affichés au survol des graphiques de répartition, pour comparer les deux réseaux
+              sans changer de page.
+            </p>
+            <ul class="tech-list">
+              <li><code>Cumul Fixe</code></li>
+              <li><code>Cumul Radio</code></li>
+              <li><code>Cumul</code></li>
+              <li><code>Cumul_Consommation_Fixe_</code></li>
+              <li><code>Cumul_Consommation_Radio_</code></li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Parts de répartition</h3>
+            <p>Pourcentage de chaque domaine dans le total, qui s'adapte à la mesure choisie.</p>
+            <ul class="tech-list">
+              <li><code>Pourcentage Légende Dynamique</code></li>
+              <li><code>Pourcentage_Mesure</code></li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Qualité des données Linky</h3>
+            <p>
+              Nombre de sites suivis et taux de complétude des données remontées par les
+              compteurs : un indicateur de fiabilité de la donnée, pour savoir quels sites
+              sont réellement couverts.
+            </p>
+            <ul class="tech-list">
+              <li><code>nb sites total</code></li>
+              <li><code>Taux de complétude Linky</code></li>
+            </ul>
+          </article>
+        </div>
+        <div class="about-text" style="max-width:70ch; margin-top:24px;">
+          <p>
+            Ces mesures s'appuient sur une <strong>table combinée</strong> qui rassemble les
+            données fixe et radio, et sur des <strong>tables de paramètres</strong> (mesure,
+            dimension de visualisation, agrégation temporelle) qui pilotent l'affichage.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
         <h2>Points techniques</h2>
         <div class="about-text" style="max-width:70ch;">
           <p>
