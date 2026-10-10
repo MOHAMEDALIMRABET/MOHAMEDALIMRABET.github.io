@@ -202,7 +202,6 @@
         <div class="card-grid">
           <article class="card">
             <h3>Sélection dynamique de l'indicateur</h3>
-            <button class="btn btn-ghost" id="dax-example-open" type="button" aria-haspopup="dialog">Exemple DAX</button>
             <p>
               L'utilisateur choisit l'indicateur à afficher, et une même mesure pilote les
               graphiques. Elle sert sur trois pages : accès fixe, accès mobile et évolution temporelle.
@@ -291,34 +290,5 @@
 
   <script src="../assets/js/main.js"></script>
   <script src="../assets/js/lightbox.js"></script>
-  <dialog id="dax-example" aria-labelledby="dax-example-title" style="max-width:calc(100% - 32px); width:720px; border:1px solid var(--line); border-radius:12px; background:var(--card); color:var(--ink); padding:24px;">
-    <h2 id="dax-example-title">Exemple DAX</h2>
-    <pre class="code-block"><code>-- Principe d'une mesure à sélection dynamique (exemple)
-Mesure =
-SWITCH(
-    SELECTEDVALUE('Sélection mesure'[Sélectionner mesure]),
-    "Consommation", [Conso totale],
-    "Puissance",    [Puissance moyenne],
-    BLANK()
-)
-
--- Principe d'un taux de complétude (exemple)
-Taux de complétude =
-DIVIDE([Nb sites avec données], [nb sites total])</code></pre>
-    <form method="dialog">
-      <button class="btn btn-ghost" type="submit">Fermer</button>
-    </form>
-  </dialog>
-  <script>
-    document.querySelector("#dax-example-open").addEventListener("click", () => {
-      document.querySelector("#dax-example").showModal();
-    });
-    document.querySelector("#dax-example").addEventListener("keydown", (event) => {
-      if (event.key === "Escape") {
-        event.preventDefault();
-        event.currentTarget.close();
-      }
-    });
-  </script>
 </body>
 </html>
