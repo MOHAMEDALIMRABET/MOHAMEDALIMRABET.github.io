@@ -72,9 +72,8 @@ body { margin: 0; background: var(--bg); color: var(--ink); line-height: 1.55; }
 /* About */
 .about-grid { display: grid; grid-template-columns: 180px 1fr; gap: 36px; align-items: start; }
 .about-photo {
-  width: 180px; height: 180px; border-radius: 12px; background: var(--accent-soft);
-  display: flex; align-items: center; justify-content: center; color: var(--accent);
-  font-weight: 700; border: 1px dashed var(--accent);
+  width: 180px; height: 180px; border-radius: 12px; object-fit: cover;
+  border: 1px solid var(--line);
 }
 .about-text p { margin: 0 0 14px; color: var(--muted); }
 .about-text p:last-child { margin-bottom: 0; }
